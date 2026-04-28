@@ -1,11 +1,13 @@
-Developer notes
-===============
+# Developer notes
 
 This document is for people who maintain and contribute to this
 repository.
 
-Commit messages
----------------
+## Style guide
+
+Follow [PEP 8](https://peps.python.org/pep-0008/).
+
+## Commit messages
 
 Commit messages follow the [Conventional
 Commits](https://www.conventionalcommits.org/) format that is also
@@ -18,8 +20,7 @@ prefixes](https://open-edx-proposals.readthedocs.io/en/latest/best-practices/oep
 to be used in commit messages via
 [Gitlint](https://jorisroovers.com/gitlint/).
 
-How to run tests
-----------------
+## How to run tests
 
 This repo uses [tox](https://tox.readthedocs.io/) for unit and
 integration tests. It does not install `tox` for you, you should
@@ -47,9 +48,7 @@ on every push to GitHub.
 commit` and `git push` to bypass local checks, and rely on GitHub
 Actions alone. But doing so is strongly discouraged.
 
-
-How to cut a release
---------------------
+## How to cut a release
 
 This repository uses
 [bumpversion](https://pypi.org/project/bumpversion/) for managing new
